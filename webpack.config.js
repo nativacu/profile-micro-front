@@ -11,7 +11,8 @@ sharedMappings.register(
 module.exports = {
   output: {
     uniqueName: "remoteapp1",
-    publicPath: "http://localhost:4203/",
+    // publicPath: "http://localhost:4203/",
+    publicPath: "auto",
     scriptType: "text/javascript",
   },
   optimization: {
