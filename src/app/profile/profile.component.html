@@ -1,18 +1,30 @@
-<h2>Hello John Doe</h2>
+<div class="p-3">
+  <h2>Hello John Doe</h2>
 
-<p>Here are your liked games:
-  <mat-chip-grid>
-    <mat-chip-row
-      *ngFor="let game of likedGames"
-      (removed)="removeLikedGame(game)">
-      {{game}}
-      <button matChipRemove>
-        <mat-icon>cancel</mat-icon>
+  <mat-card>
+    <mat-card-title>
+      <span class="px-2">
+        <mat-icon class="pt-1">favorite</mat-icon>
+         Here are your liked games:
+      </span>
+    </mat-card-title>
+    <mat-card-content>
+      <mat-chip-set>
+        <mat-chip-row
+          *ngFor="let game of likedGames"
+          (removed)="removeLikedGame(game)">
+          {{game}}
+          <button matChipRemove>
+            <mat-icon>cancel</mat-icon>
+          </button>
+        </mat-chip-row>
+      </mat-chip-set>
+    </mat-card-content>
+    <mat-card-actions>
+      <button class="mt-3" mat-flat-button (click)="clearLikedGames()">
+        <mat-icon>clear</mat-icon>
+        Clear all
       </button>
-    </mat-chip-row>
-  </mat-chip-grid>
-</p>
-<button mat-flat-button>
-  <mat-icon>clear</mat-icon>
-  Clear all
-</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

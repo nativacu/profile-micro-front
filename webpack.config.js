@@ -36,6 +36,7 @@ module.exports = {
         './ProfileModule': './/src/app/profile/profile.module.ts'
       },
 
+
       shared: share({
         "@angular/core": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
         "@angular/common": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
@@ -44,7 +45,6 @@ module.exports = {
         "@angular/platform-browser": { singleton: true, strictVersion: true, requiredVersion: 'auto'},
         "@angular/platform-browser-dynamic": { singleton: true, strictVersion: true, requiredVersion: 'auto'},
         "@angular/material": { singleton: true, strictVersion: true, requiredVersion: 'auto'},
-        "@angular/cdk": { singleton: true, strictVersion: true, requiredVersion: 'auto'},
 
         ...sharedMappings.getDescriptors()
       })

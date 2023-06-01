@@ -4,6 +4,8 @@ import { ProfileComponent } from './profile.component';
 import {MatChipsModule} from "@angular/material/chips";
 import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
+import {ProfileRoutingModule} from "./profile-routing.module";
+import {MatCardModule} from "@angular/material/card";
 
 
 
@@ -11,11 +13,16 @@ import {MatButtonModule} from "@angular/material/button";
   declarations: [
     ProfileComponent
   ],
+  exports: [
+    ProfileComponent
+  ],
   imports: [
     CommonModule,
     MatChipsModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule,
+    ProfileRoutingModule
   ]
 })
 export class ProfileModule { }
