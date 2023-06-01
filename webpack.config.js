@@ -12,7 +12,7 @@ module.exports = {
   output: {
     uniqueName: "remoteapp1",
     // publicPath: "http://localhost:4203/",
-    publicPath: "auto",
+    publicPath: "https://capable-puffpuff-7fd394.netlify.app/",
     scriptType: "text/javascript",
   },
   optimization: {
