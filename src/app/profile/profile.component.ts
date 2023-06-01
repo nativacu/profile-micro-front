@@ -16,6 +16,7 @@ export class ProfileComponent {
   }
 
   clearLikedGames() {
+    this.likedGames = [];
     localStorage.removeItem('likedGames');
   }
 
