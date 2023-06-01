@@ -10,7 +10,7 @@ sharedMappings.register(
 
 module.exports = {
   output: {
-    uniqueName: "remoteapp1",
+    uniqueName: "remoteapp2",
     // publicPath: "http://localhost:4203/",
     publicPath: "https://capable-puffpuff-7fd394.netlify.app/",
     scriptType: "text/javascript",
