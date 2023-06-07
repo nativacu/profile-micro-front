@@ -1,3 +1,5 @@
+<div>Loaded with: {{ngVersion}}</div>
+
 <div class="p-3">
   <h2>Hello John Doe</h2>
 
@@ -8,7 +10,7 @@
          Here are your liked games:
       </span>
     </mat-card-title>
-    <mat-card-content>
+    <mat-card-content *ngIf="likedGames.length; else noGamesFound">
       <mat-chip-set>
         <mat-chip-row
           *ngFor="let game of likedGames"
@@ -28,3 +30,7 @@
     </mat-card-actions>
   </mat-card>
 </div>
+
+<ng-template #noGamesFound>
+  <p class="ml-3">No liked games found.</p>
+</ng-template>
